@@ -1,0 +1,12 @@
+#map {
+  width: 740px;
+  height: 460px;
+  border: 1px solid #ccc;
+}
+
+#info-box {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
