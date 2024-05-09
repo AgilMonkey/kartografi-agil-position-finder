@@ -1,17 +1,6 @@
 body {
     background: #E9E3E6;
-}
-
-#map {
-  height: 460px;
-  border: 1px solid #ccc;
-}
-
-#info-box {
-  margin-top: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  width: 300px;
+    font-family: 'Inter', sans-serif;
 }
 
 .container {
@@ -19,4 +8,9 @@ body {
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
+}
+
+#map {
+  height: 460px;
+  border: 5px solid #736F72;
 }
