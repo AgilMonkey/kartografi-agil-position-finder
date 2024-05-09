@@ -1,5 +1,8 @@
+body {
+    background: #E9E3E6;
+}
+
 #map {
-  width: 740px;
   height: 460px;
   border: 1px solid #ccc;
 }
@@ -9,4 +12,11 @@
   padding: 10px;
   border: 1px solid #ccc;
   width: 300px;
+}
+
+.container {
+    width: 70%;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
 }
