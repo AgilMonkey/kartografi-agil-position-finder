@@ -18,7 +18,19 @@ function getAddress(lat, lng) {
     .then(response => response.json())
     .then(data => {
       if (data.address) {
-        var address = data.address.postcode + ", " + data.address.road + ", " + data.address.city + ", " + data.address.country;
+        var address = "";
+        if (data.address.postcode) {
+            address += data.address.postcode + ", ";
+        }
+        if (data.address.road) {
+            address += data.address.road + ", ";
+        }
+        if (data.address.city) {
+            address += data.address.city + ", ";
+        }
+        if (data.address.country) {
+            address += data.address.country;
+        }
         document.getElementById('address').textContent = "Alamat: " + address;
       } else {
         console.error("Error:", "Address not found");
