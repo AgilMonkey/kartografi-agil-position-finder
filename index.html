@@ -2,39 +2,54 @@
 <html>
 
 <head>
-  <title>GPS Location</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    <title>GPS Location</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <!-- Make sure you put this AFTER Leaflet's CSS -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <style>
+    <style>
     p {
       line-height: 0.5;
       font-size: 16px;
       /* Adjust line spacing as desired */
     }
-  </style>
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <h1>GPS Location</h1>
-  <h2>Tugas Kuliah</h2>
-  <p>Nama MK : Kartografi dan Geospasial</p>
-  <p>Prodi : D4 SIKC</p>
-  <p>Kampus : Politeknik Negeri Banjarmasin</p>
-  <p>Dosen Pengampu : Agus SBN</p>
-  <p>Nama anda : Muhammad Agil Fadilah</p>
-  <p>NIM : C050422010</p>
-  <p>Kelas : SIKC 4A</p>
-  <p>Tanggal : 23 April 2024</p>
-  <br>
-  <p id="latitude"></p>
-  <p id="longitude"></p>
-  <p id="address"></p>
+    <div class="container">
+
+        <h1>Tugas Kuliah GPS Location</h1>
+        <h3 id="latitude">Lintang: ?</h3>
+        <h3 id="longitude">Bujur: ?</h3>
+        <h3 id="address">Alamat: ?</h3>
+
+        <div id="map"">
+            <!-- <div id="map"></div> -->
+        </div>
+
+        <h2>Tentang:</h2>
+        <p>Nama MK : Kartografi dan Geospasial</p>
+        <p>Prodi : D4 SIKC</p>
+        <p>Kampus : Politeknik Negeri Banjarmasin</p>
+        <p>Dosen Pengampu : Agus SBN</p>
+        <p>Nama : Muhammad Agil Fadilah</p>
+        <p>NIM : C050422010</p>
+        <p>Kelas : SIKC 4A</p>
+        <p>Tanggal : 9 Mei 2024</p>
+        <br>
+        <div style="text-align: center;">
+            <a href="https://github.com/AgilMonkey/kartografi-agil-position-finder">Github</a>
+            <p style="font-size: 12px;">Lasciate ogne speranza, voi ch'intrate</p>
+        </div>
+
+    </div>
 </body>
-<div id="map"></div>
 <script src="script.js"></script>
 </body>
 
